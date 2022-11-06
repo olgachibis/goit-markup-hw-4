@@ -229,17 +229,18 @@ line-height: calc(24/14);
 letter-spacing: 0.03em;
 }
 .benefits-list .icon{
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-   
-    justify-content: center;
+    
+    fill: var(--primary-text-color);
+}
+.svg-icon{
+margin-bottom: 30px;
+width: 270px;
+height: 120px;
+justify-content: center;
     display: flex;
     align-items: center;
     background: var(--bg-color-secondary);
     border-radius: 4px;
-    fill: var(--primary-text-color);
 }
 .our-work .item{
 width: 370px;
@@ -250,7 +251,6 @@ margin-right: 30px;
 }
 .our-team .item {
     margin-right: 30px;
-
     background: var(--secondary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -299,7 +299,6 @@ letter-spacing: 0.03em;
 }
 
 .social-link {
-    padding: 12px;
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -318,26 +317,30 @@ letter-spacing: 0.03em;
 /* Our clients */
 .our-clients{
     display: flex;
-    justify-content: space-between;
-color: var(--social-color);
-}
+    }
 
 .our-clients .item{
-padding: 10px 32px;
 border: 1px solid var(--social-color);
 border-radius: 4px;
 }
 .our-clients .item:not(:last-child) {
     margin-right: 30px;}
 
-.clients-link:hover .icon,
-.clients-link :focus .icon{
+.clients-list:hover .icon,
+.clients-list:focus .icon{
 fill: var(--accent-color);
 }
 
 .our-clients .item:hover,
 .our-clients .item:focus {
 border: 1px solid var(--accent-color);
+}
+.clients-list{
+    flex-basis: calc((100%-150px/6));
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clients{
@@ -378,7 +381,6 @@ padding-bottom: 94px;
    }
  
 .project-list .item{
-    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -437,7 +439,7 @@ margin-bottom: 20px;
     }
       
     .footer-title{
-       padding-bottom: 20px;
+       margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: calc(16/14);
