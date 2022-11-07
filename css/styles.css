@@ -291,7 +291,7 @@ letter-spacing: 0.03em;
             }
 .social-icons{
     margin: 16px 32px 0px 32px;
-    justify-content: space-between;
+    gap: 10px;
     display: flex;
 }  
 .social-icons .icon{
@@ -400,7 +400,7 @@ margin-right: 0;
 .project-item{
     display: block;
 }
-.project-item:hover .project-box{
+.project-item:hover {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -420,13 +420,12 @@ margin-bottom: 20px;
 } 
 .footer-general{
     display: flex;
+    align-items: baseline;
 }
 
 .social-footer{
    margin-left: 70px;
-   margin-top: 12px;
-   width: 206px;
-   height: 80px;
+   
       }
 
     .social-footer .social-link{
